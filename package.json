@@ -1,7 +1,7 @@
 {
-  "name": "clonezilla",
+  "name": "Maxwell Small Engine Repair",
   "version": "1.0.0",
-  "description": "clonezilla FE",
+  "description": "Maxwell Small Engine Repair",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +14,7 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
+    "mdi": "^1.9.33",
     "normalize": "^0.3.1",
     "normalize.css": "^5.0.0",
     "underscore": "^1.8.3",

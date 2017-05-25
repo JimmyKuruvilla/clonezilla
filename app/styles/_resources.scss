@@ -1,0 +1,17 @@
+#content {
+  .resources-html {
+    @extend %tpl-html;
+    .tpl-content {
+      .resource {
+        font-size: .9em;
+        .resource-link {
+          @extend %link;
+        }
+      }
+      .heading {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

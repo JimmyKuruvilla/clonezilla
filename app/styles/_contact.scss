@@ -1,0 +1,47 @@
+#content {
+  .contact-html {
+    @extend %tpl-html;
+    table.contact {
+      margin: 0 auto;
+      .mdi-email, .mdi-store {
+        @extend %hover;
+        @extend %pointer;
+      }
+      a {
+        @extend %link;
+      }
+      tr {
+        td:nth-of-type(1) {
+          width: 100px;
+        }
+        td {
+          padding: 20px 0px;
+        }
+      }
+      ul.opening-hours-list {
+        padding: 0;
+        list-style: none;
+        li.opening-hours {
+          padding: 5px 0px;
+          span {
+            display: inline-block;
+            &:nth-of-type(1) {
+              width: 50%;
+            }
+          }
+          &.note span {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .photo {
+      text-align: center;
+      img {
+        border-radius: $std-radius;
+        width: 40%;
+        box-shadow: 0 0 40px rgba($content-bg, 1);
+      }
+    }
+  }
+}

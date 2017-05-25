@@ -1,67 +1,12 @@
-<div class="innertube">
-<a name="clonezilla"></a>
-<h3><font color="#3333ff">What is Clonezilla?</font></h3>
-Clonezilla is a partition and disk imaging/cloning program similar to <a href="http://en.wikipedia.org/wiki/Acronis_True_Image" target=_blank>True Image&reg;</a> or <a target="_blank" href="http://en.wikipedia.org/wiki/Ghost_%28software%29">Norton Ghost&reg;</a>. It helps you to do system deployment, bare metal backup and recovery. Two types of Clonezilla are available, <a href="clonezilla-live.php">Clonezilla live</a> and <a href="./clonezilla-SE/">Clonezilla SE (server edition)</a>. Clonezilla live is suitable for single machine backup and restore. While Clonezilla SE is for massive deployment, it can clone many (40 plus!) computers simultaneously. Clonezilla saves and restores only used blocks in the hard disk. This increases the clone efficiency. With some high-end hardware in a 42-node cluster, a multicast restoring at rate 8 GB/min was reported.<br>
-</div>
+<div class="about-html">
+  <div class="tpl-content">
+    <p>Repairing your own small engine powered machinery can be dangerous and, ultimately, more expensive than having a highly trained professional do it. These engines are increasingly complex machines. Adjustments and replacements must be made with great care and to fine tolerences.</p>
 
-<!-- ** start main: Features -->
-<div class="innertube"><a name="features"></a>
-<h3><font color="#3333ff">Features:</font></h3>
-<ul>
-  <li>Many File systems are supported: (1) ext2, ext3, ext4, reiserfs, reiser4, xfs, jfs, btrfs, f2fs and nilfs2 of GNU/Linux, (2) FAT12, FAT16, FAT32, NTFS of MS Windows, (3) HFS+ of Mac OS, (4) UFS of FreeBSD, NetBSD, and OpenBSD, (5) minix of Minix, and (6) VMFS3 and VMFS5 of VMWare ESX. Therefore you can clone GNU/Linux, MS windows, Intel-based Mac OS, FreeBSD, NetBSD, OpenBSD, Minix, VMWare ESX and Chrome OS/Chromium OS, no matter it's 32-bit (x86) or 64-bit (x86-64) OS. For these file systems, only used blocks in partition are saved and restored. For unsupported file system, sector-to-sector copy is done by dd in Clonezilla.
-  <li><font color=red>LVM2</font> (LVM version 1 is not) under GNU/Linux is supported.
-  <li>Boot loader, including grub (version 1 and <font color=red>version 2</font>) and syslinux, could be reinstalled.
-  <li>Both <a href="http://en.wikipedia.org/wiki/Master_boot_record" target=_blank>MBR</a> and <a href="http://en.wikipedia.org/wiki/GUID_Partition_Table" target=_blank>GPT</a> partition formats of hard drive are supported. Clonezilla live also can be booted on a <a href="http://en.wikipedia.org/wiki/BIOS" target=_blank>BIOS</a> or <a href="http://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface" target=_blank>uEFI</a> machine.
-  <li>Unattended mode is supported. Almost all steps can be done via commands and options. You can also use <a href="fine-print-live-doc.php?path=clonezilla-live/doc/99_Misc/00_live-boot-parameters.doc">a lot of boot parameters</a> to customize your own imaging and cloning.
-  <li>One image restoring to multiple local devices is supported.
-  <li>Image could be encrypted. This is done with <a href="http://ecryptfs.org/" target=_blank>ecryptfs</a>, a POSIX-compliant enterprise cryptographic stacked filesystem.
-  <li><font color=red>Multicast</font> is supported in Clonezilla SE, which is suitable for massive clone. You can also remotely use it to save or restore a bunch of computers if PXE and Wake-on-LAN are supported in your clients.
-  <li>The image file can be on local disk, ssh server, samba server, NFS server or <a href="http://en.wikipedia.org/wiki/WebDAV" target=_blank>WebDAV</a> server.
-  <li>AES-256 encryption could be used to secures data access, storage and transfer.
-  <li>Based on <a href="http://partclone.org" target=_blank>Partclone</a> (default), <a href="http://www.partimage.org" target=_blank> Partimage</a> (optional), <a href="http://www.linux-ntfs.org/" target=_blank>ntfsclone</a> (optional), or dd to image or clone a partition. However, Clonezilla, containing some other programs, can save and restore not only partitions, but also a whole disk.
-  <li>By using another free software <a href="http://drbl-winroll.sourceforge.net/">drbl-winroll</a>, which is also developed by us, the hostname, group, and SID of cloned MS windows machine can be automatically changed.
-</ul>
-</div>
+    <p>At Maxwell Small Engine Repair we take great pride in providing quality work at a fair price. Your work is available when we promise and we NEVER perform unneeded repairs. There is a difference in repair shops.</p>
 
-<div class="innertube"><a name="requirements"></a>
-<h3><font color="#3333ff">Minimum System Requirements for Clonezilla live:</font></h3>
-<ul>
-<li>X86 or x86-64 processor
-<li>196 MB of system memory (RAM)
-<li>Boot device, e.g. CD/DVD Drive, USB port, PXE, or hard drive
-</ul>
-</div>
+    <p>Let us prove it!</p>
 
-<div class="innertube"><a name="limitations"></a>
-<h3><font color="#3333ff">Limitations:</font></h3>
-<ul>
-  <li>The destination partition must be equal or larger than the source one.
-  <li>Differential/incremental backup is not implemented yet.
-  <li>Online imaging/cloning is not implemented yet. The partition to be imaged or cloned has to be unmounted.
-  <li>Due to the image format limitation, the image can not be explored or mounted. You can _NOT_ recovery single file from the image. However, you still have workaround to make it, read <a href="http://drbl.org/faq/fine-print.php?path=./2_System/43_read_ntfsimg_content.faq#43_read_ntfsimg_content.faq" target=_blank>this</a>.
-  <li>Recovery Clonezilla live with multiple CDs or DVDs is not implemented yet. Now all the files have to be in one CD or DVD if you choose to create the recovery iso file.
-</ul>
-</div>
+    <div><img src="../images/dogs.jpg"></div>
+  </div>
 
-<!-- ** start main: License -->
-<div class="innertube"><a name="license"></a>
-<h3><font color="#3333ff">License:</font></h3>
-<ul>
-  <li>Clonezilla itself is licensed under the GNU General Public License (GPL) Version 2. However, to run Clonezilla, a lot of free and open source software, e.g. the Linux kernel and a minimal GNU/Linux OS, are required. 
-</ul>
-</div>
-
-<!-- ** start main: License -->
-<div class="innertube"><a name="license"></a>
-<h3><font color="#3333ff">Which Clonezilla Shall I Use ?</font></h3>
-<ul>
-  <li><a href="clonezilla-live.php">Clonezilla Live</a>: Clonezilla live allows you to use CD/DVD or USB flash drive to boot and run clonezilla (Unicast only)</li>
-  <li><a href="./clonezilla-SE/">Clonezilla SE</a>: Clonezilla SE is included in DRBL, therefore a DRBL server must first be set up in order to use Clonezilla to do massively cloning (unicast, broadcast and multicast are supported)
-</ul>
-<!--
-<p><small><font color="green">Advertisement: </font></small><a href="http://www.uniblue.com/cm/clonezilla/driverscanner/rec/download/?aff=24036" target=_blank><img src="./images/clonezilla_rec.gif" border="0"></a></p>
--->
-</div>
-
-<!-- ** end main session -->
 </div>

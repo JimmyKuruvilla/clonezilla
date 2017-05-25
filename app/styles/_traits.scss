@@ -1,0 +1,39 @@
+%hover {
+  &:hover {
+    color: green;
+  }
+}
+%pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+%link {
+  text-decoration: none;
+  @extend %hover;
+  @extend %pointer;
+  color: $text;
+}
+%tpl-html {
+  width: 100%;
+  background: rgba($content-bg, .55);
+  height: 100%;
+  border-radius: $std-radius;
+  * {
+    font-weight: 300;
+    font-family: 'Raleway', serif;
+    color: $text;
+    font-size: 1.1em;
+  }
+  .tpl-content {
+    @extend %tpl-content;
+  }
+}
+%tpl-content {
+  height: 100%;
+  padding: 20px 20px;
+  line-height: 1.8em;
+  box-shadow: 0 0 4px rgba($content-bg, 1);
+  border-radius: $std-radius;
+  overflow-y: auto;
+}
