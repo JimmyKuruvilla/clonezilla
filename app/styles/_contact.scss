@@ -15,7 +15,7 @@
           width: 100px;
         }
         td {
-          padding: 20px 0px;
+          padding: 5px  0px 0px 0px;
         }
       }
       ul.opening-hours-list {
@@ -33,14 +33,6 @@
             width: 100%;
           }
         }
-      }
-    }
-    .photo {
-      text-align: center;
-      img {
-        border-radius: $std-radius;
-        width: 40%;
-        box-shadow: 0 0 40px rgba($content-bg, 1);
       }
     }
   }

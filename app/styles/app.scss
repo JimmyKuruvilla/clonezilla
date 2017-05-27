@@ -8,7 +8,9 @@ $header-font: black;
 $footer-font: black;
 $text: white;
 $std-radius: 10px;
+
 @import 'traits';
+@import 'mixins';
 @import 'contact';
 @import 'home';
 @import 'about';
@@ -16,7 +18,12 @@ $std-radius: 10px;
 @import 'directions';
 @import 'forSale';
 @import 'tag';
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html {
+  box-sizing: border-box;
   * {
     font-family: 'Roboto Slab', serif;
     color: $text;
@@ -50,8 +57,13 @@ html {
           display: inline-block;
           vertical-align: top;
           .main-heading {
-            margin: 13px 0;
+            margin: 13px 0 6px 0;
             font-size: 1.4em;
+          }
+          .sub-heading {
+            margin: 0;
+            font-size: 0.8em;
+            line-height: 0.6em;
           }
         }
         #nav {
@@ -93,33 +105,6 @@ html {
           opacity: 1;
         }
       }
-    }
-    .footer-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      #footer {
-        * {
-          color: $footer-font;
-        }
-        background-color: $footer-bg;
-        width: 80%;
-        position: fixed;
-        bottom: 0px;
-        z-index: 1;
-        text-align: center;
-        .footer-sub-heading {
-          margin: 0;
-        }
-      }
-      // .footer-background {
-      //   background-color: $footer-bg;
-      //   width: 100%;
-      //   position: fixed;
-      //   bottom: 0px;
-      //   left: 0px;
-      //   z-index: 0;
-      //   height: 40px;
-      // }
     }
   }
 }

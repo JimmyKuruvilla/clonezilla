@@ -2,28 +2,63 @@
   .home-html {
     @extend %tpl-html;
     .work-summary {
-      padding-left: 40px;
+      width: 100%;
+      text-align: center;
+      @include center(true, true);
+      white-space: nowrap;
+      .aligner {
+        white-space: normal;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        .summary-cell {
+          ul {
+            padding: 0;
+          }
+          &.equipment {
+            float: right;
+            width: 50%;
+            margin: 0px 5% 0px 0px;
+          }
+          &.parts {
+            width: 50%;
+            margin: 0px 0px 5% 0px;
+          }
+          text-align: center;
+          .sub-heading {
+            font-size: 1.2em;
+          }
+        }
+      }
     }
     .reviews {
       text-align: center;
       font-size: 2em;
       line-height: 2em;
-      a {
-        padding-left: 20px;
-        font-size: 1.5em;
-        @extend %link;
-        i {
+      width: 80%;
+      position: fixed;
+      bottom: 0;
+      margin-left: -20px;
+      .links {
+        // margin-left: -20px;
+        a {
+          padding-left: 20px;
+          margin-left: -20px;
+          font-size: 1em;
           @extend %link;
+          i {
+            @extend %link;
+          }
         }
       }
-      .heading {
-        font-size: 1.2em;
+      .review-heading {
+        font-size: 0.6em;
         line-height: 1.2em;
-        margin-bottom: 15px;
       }
     }
     ul {
       margin-top: 0;
+      list-style: none;
       li {
         font-size: 0.8em;
         line-height: 1.3em;
@@ -31,17 +66,17 @@
     }
     .breaker {
       margin-top: 50px;
-      &.review {
-        margin-top: 150px;
-      }
     }
     .heading {
+      width: 100%;
+      text-align: center;
       font-size: 2em;
       line-height: 1.2em;
-      margin-bottom: 15px;
     }
     .sub-heading {
       font-size: 1em;
+      padding-bottom: 15px;
+      height: 80px;
     }
   }
 }

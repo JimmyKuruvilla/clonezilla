@@ -5,7 +5,7 @@
       overflow-y: hidden;
       .google-maps {
         position: relative;
-        padding-bottom: 90%; // This is the aspect ratio
+        padding-bottom: 70%; // This is the aspect ratio
         height: 0;
         overflow: hidden;
         width: 100%;
@@ -15,7 +15,7 @@
         top: 0;
         left: 0;
         width: 100% !important;
-        height: 100% !important;
+        height: 90% !important;
       }
     }
   }

@@ -2,7 +2,9 @@
   .tag-html {
     @extend %tpl-html;
     .tpl-content{
-      padding-top: 30%;
+      #hero-tagline{
+      @include center(false, true);
+      }
     }
   }
 }

@@ -16,7 +16,7 @@
 }
 %tpl-html {
   width: 100%;
-  background: rgba($content-bg, .55);
+  background: rgba($content-bg, .75);
   height: 100%;
   border-radius: $std-radius;
   * {
@@ -32,8 +32,12 @@
 %tpl-content {
   height: 100%;
   padding: 20px 20px;
+  margin-bottom: 40px;
   line-height: 1.8em;
   box-shadow: 0 0 4px rgba($content-bg, 1);
   border-radius: $std-radius;
   overflow-y: auto;
+  .bottom-breaker {
+    margin-bottom: 100px;
+  }
 }
